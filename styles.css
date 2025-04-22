@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --color-green: #2ecc71;
+    --color-blue: #3498db;
+    --color-white: #ffffff;
+    --color-gray-light: #f9f9f9;
+    --color-gray-dark: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: var(--color-white);
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--color-green);
+    color: var(--color-white);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+header .header-content h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+
+header .header-content p {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--color-white);
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-list li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a:focus {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    outline: none;
+}
+
+main {
+    flex: 1;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: var(--color-gray-light);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    color: var(--color-gray-dark);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-green);
+    border-bottom: 3px solid var(--color-blue);
+    padding-bottom: 0.5rem;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+    max-width: 500px;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-green);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-link {
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #27ae60;
+    outline: none;
+}
+
+.btn-secondary {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #2980b9;
+    outline: none;
+}
+
+.btn-link {
+    background: none;
+    color: var(--color-blue);
+    padding: 0;
+    font-size: 1rem;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.feature {
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.energy-list,
+.program-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.energy-list li,
+.program-list li {
+    background: var(--color-white);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.energy-list li h3 {
+    margin-top: 0;
+    color: var(--color-green);
+}
+
+.section-articles-news article {
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.section-articles-news article h3 {
+    margin-top: 0;
+    color: var(--color-green);
+}
+
+.section-community ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.section-community ul li {
+    background: var(--color-white);
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.community-stories {
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.section-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-contact label {
+    font-weight: 600;
+}
+
+.section-contact input,
+.section-contact textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.section-contact button {
+    width: 150px;
+    padding: 0.75rem;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section-contact button:hover,
+.section-contact button:focus {
+    background-color: #27ae60;
+    outline: none;
+}
+
+.social-media {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.social-media a {
+    color: var(--color-blue);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.social-media a:hover,
+.social-media a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+@media (max-width: 900px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .features {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header .header-content h1 {
+        font-size: 1.8rem;
+    }
+    header .header-content p {
+        font-size: 1rem;
+    }
+    main {
+        margin: 1rem;
+        padding: 0 0.5rem;
+    }
+}
